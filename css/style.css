@@ -1,0 +1,154 @@
+:root {
+    /* From banner palette*/
+    --warm-gray: #7e7162;
+    --dark-slate-gray: #2f3939;
+    --pale-cyan: #adbbbc;
+    --amber: #f0b56b;
+    --mahogany: #523636;
+
+    /* From coolors palette */
+    --moss-green: #606c38;
+    --dark-olive:#283618;
+    --ivory:#fefae0;
+    --goldenrod:#dda15e;
+    --rust:#bc6c25;
+
+}
+
+body {
+    width: 720px;
+    margin: 0 auto;
+    background-color: var(--dark-olive);
+    font-family: "Mulish", sans-serif;
+    /* border: 3px solid black; */
+}
+
+#hero {
+    height: 343px;
+    background-image: url("/images/skövde.jpg");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--ivory);
+    margin: 0 auto;
+    /* border: 2px solid green; */
+}
+
+#hero h1 {
+    background-color: var(--dark-olive);
+    padding: 3px 16px 5px;
+    border-radius: 10px;
+
+}
+
+#hero h2 {
+    background-color:var(--moss-green);
+    width: 400px;
+    padding: 3px 12px 5px;
+    border-radius: 10px;
+}
+
+#activities {
+    height: auto;
+    background-color: var(--ivory);
+    color: var(--dark-olive);
+    margin: 0 auto;
+    /* border: 2px solid blue; */
+    padding: 1px 10px;
+}
+
+#activities h3 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+#places {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px 10px;
+    margin: 0 auto 20px;
+    color: var(--dark-olive);
+}
+
+.place {
+    flex: 0 1 30%;
+    box-sizing: border-box;
+    padding: 0px 10px;
+    text-align: center;
+}
+
+.place img {
+    width: 100px;
+    border-radius: 25%;
+}
+
+.place h4 {
+    font-size: 16px;
+    font-weight: 700px;
+    margin: 10px auto 5px
+}
+
+.place p {
+    margin: 0 auto 20px;
+}
+
+.place a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.place a:hover {
+    color: var(--goldenrod)
+}
+
+
+#guide {
+    height: 394px;
+    background-color: var(--ivory);
+    margin: 0 auto;
+    /* border: 2px solid red; */
+    padding: 1px;
+}
+
+#guide-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--moss-green);
+    width: 500px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 6px var(--dark-olive);
+}
+
+#guide-card img {
+    border-radius: 10px;
+    width: 180px;
+    margin: 23px 5px;
+}
+
+#guide-description {
+    width: 180px;
+    text-align: center;
+    color:var(--ivory);
+    font-family: "Mulish", sans-serif;
+}
+
+#guide-description h3 {
+    font-size: 24px;
+}
+
+#guide-description h4 {
+    font-size: 16px;
+}
+
+#guide-description p {
+    font-size: 16px;
+    font-style: italic;
+}

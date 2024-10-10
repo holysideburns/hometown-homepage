@@ -6,13 +6,12 @@
     --amber: #f0b56b;
     --mahogany: #523636;
 
-    /* From coolors palette */
+    /* From Coolors.co palette */
     --moss-green: #606c38;
     --dark-olive:#283618;
     --ivory:#fefae0;
     --goldenrod:#dda15e;
     --rust:#bc6c25;
-
 }
 
 body {
@@ -20,7 +19,6 @@ body {
     margin: 0 auto;
     background-color: var(--dark-olive);
     font-family: "Mulish", sans-serif;
-    /* border: 3px solid black; */
 }
 
 #hero {
@@ -33,7 +31,6 @@ body {
     text-align: center;
     color: var(--ivory);
     margin: 0 auto;
-    /* border: 2px solid green; */
 }
 
 #hero h1 {
@@ -55,7 +52,6 @@ body {
     background-color: var(--ivory);
     color: var(--dark-olive);
     margin: 0 auto;
-    /* border: 2px solid blue; */
     padding: 1px 10px;
 }
 
@@ -85,14 +81,17 @@ body {
 .place img {
     width: 100px;
     border-radius: 25%;
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease;
 }
 
 .place h4 {
     font-size: 16px;
     font-weight: 700px;
-    margin: 10px auto 5px
+    margin: 10px auto 5px;
+    transition: color 0.3s ease;
 }
-
+ 
 .place p {
     margin: 0 auto 20px;
 }
@@ -103,15 +102,13 @@ body {
 }
 
 .place a:hover {
-    color: var(--goldenrod)
+    color: var(--amber);
 }
-
 
 #guide {
     height: 394px;
     background-color: var(--ivory);
     margin: 0 auto;
-    /* border: 2px solid red; */
     padding: 1px;
 }
 
